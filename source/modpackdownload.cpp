@@ -130,7 +130,7 @@ void modpackDownload()
 	}
 
 	int newslot = maxslotcheck(tid, 1000) + 1;
-	string dest = "/3ds/ModMoon/" + to_string(titleid) + "/Slot_" + to_string(newslot);
+	string dest = "/3ds/ModMoon/" + string(titleid) + "/Slot_" + to_string(newslot);
 	chdir("/");
 	remove("/3ds/ModMoon/temp.zip");
 	rename("/3ds/ModMoon/temp", dest.c_str());
